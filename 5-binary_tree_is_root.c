@@ -14,7 +14,7 @@ int binary_tree_is_root(const binary_tree_t *node)
         return (0);
     }
 
-    /*Check if both left and right child pointers are not NULL.
+    /*Check if parent pointer is NULL.
      If so, the node is a root */
-    return (!(node->left == NULL && node->right == NULL));
+    return (node->parent == NULL);
 }
